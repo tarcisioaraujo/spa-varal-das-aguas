@@ -1,6 +1,36 @@
 <template>
-  <div class="">
-    <h2>Varal das Aguas</h2>
+  <div class="">    
+    <div id="background">
+			<div id="Background"><img src="../../assets/images/Background.png"></div>
+			<div id="Rectangle1"><img src="../../assets/images/Rectangle1.png"></div>
+			<div id="oceanseapacificcalmr"><img src="../../assets/images/oceanseapacificcalmr.png"></div>
+			<div id="bgbege"><img src="../../assets/images/bgbege.png"></div>
+			<div id="bgbranco"><img src="../../assets/images/bgbranco.png"></div>
+			<div id="linhacinza"><img src="../../assets/images/linhacinza.png"></div>
+			<div id="marcainemasemfundo"><img src="../../assets/images/marcainemasemfundo.png"></div>
+			<div id="retangulorodap"><img src="../../assets/images/retangulorodap.png"></div>
+			<div id="Rectangle2"><img src="../../assets/images/Rectangle2.png"></div>
+			<div id="20032017das1630hs173"><img src="../../assets/images/20032017das1630hs173.png"></div>
+			<div id="APRESENTAO"><img src="../../assets/images/APRESENTAO.png"></div>
+			<div id="2024032017nadivisria"><img src="../../assets/images/2024032017nadivisria.png"></div>
+			<div id="EXPOSIODEFOTOS"><img src="../../assets/images/EXPOSIODEFOTOS.png"></div>
+			<div id="Rectangle4"><img src="../../assets/images/Rectangle4.png"></div>
+			<div id="FAASUAINSCRIO"><img src="../../assets/images/FAASUAINSCRIO.png"></div>
+			<div id="Todasasfotosqueretra"><img src="../../assets/images/Todasasfotosqueretra.png"></div>
+			<div id="REGRAS"><img src="../../assets/images/REGRAS.png"></div>
+			<div id="SOBRE"><img src="../../assets/images/SOBRE.png"></div>
+			<div id="ObjetivosPromoverase"><img src="../../assets/images/ObjetivosPromoverase.png"></div>
+			<div id="OCONCURSO"><img src="../../assets/images/OCONCURSO.png"></div>
+			<div id="Concursodefotografia"></div>			
+			<div id="Varaldasguas"><img src="../../assets/images/Varaldasguas.png"></div>
+			<div id="RoundedRectangle1cop"><img src="../../assets/images/RoundedRectangle1cop.png"></div>
+			<div id="bgmenu"><img src="../../assets/images/bgmenu.png"></div>
+			<div id="INCIO"><img src="../../assets/images/INCIO.png"></div>
+			<div id="OCONCURSO_0"><img src="../../assets/images/OCONCURSO_0.png"></div>
+			<div id="SOBRE_0"><img src="../../assets/images/SOBRE_0.png"></div>
+			<div id="REGRAS_0"><img src="../../assets/images/REGRAS_0.png"></div>
+			<div id="INSCRIO"><img src="../../assets/images/INSCRIO.png"></div>
+		</div>
   </div>
 </template>
 
