@@ -1,6 +1,5 @@
-<template>
-  <div class="">    
-    <div id="background">
+<template>     
+    <div>      
 			<div id="Background"><img src="../../assets/images/Background.png"></div>
 			<div id="Rectangle1"><img src="../../assets/images/Rectangle1.png"></div>
 			<div id="oceanseapacificcalmr"><img src="../../assets/images/oceanseapacificcalmr.png"></div>
@@ -23,18 +22,12 @@
 			<div id="OCONCURSO"><img src="../../assets/images/OCONCURSO.png"></div>
 			<div id="Concursodefotografia"></div>			
 			<div id="Varaldasguas"><img src="../../assets/images/Varaldasguas.png"></div>
-			<div id="RoundedRectangle1cop"><img src="../../assets/images/RoundedRectangle1cop.png"></div>
-			<div id="bgmenu"><img src="../../assets/images/bgmenu.png"></div>
-			<div id="INCIO"><img src="../../assets/images/INCIO.png"></div>
-			<div id="OCONCURSO_0"><img src="../../assets/images/OCONCURSO_0.png"></div>
-			<div id="SOBRE_0"><img src="../../assets/images/SOBRE_0.png"></div>
-			<div id="REGRAS_0"><img src="../../assets/images/REGRAS_0.png"></div>
-			<div id="INSCRIO"><img src="../../assets/images/INSCRIO.png"></div>
-		</div>
-  </div>
+			<div id="RoundedRectangle1cop"><img src="../../assets/images/RoundedRectangle1cop.png"></div>			
+		</div>  
 </template>
 
 <script>
+
 export default {
   name: 'Home',
   data () {
