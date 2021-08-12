@@ -5,9 +5,7 @@
 			<div id="oceanseapacificcalmr"><img src="../../assets/images/oceanseapacificcalmr.png"></div>
 			<div id="bgbege"><img src="../../assets/images/bgbege.png"></div>
 			<div id="bgbranco"><img src="../../assets/images/bgbranco.png"></div>
-			<div id="linhacinza"><img src="../../assets/images/linhacinza.png"></div>
-			<div id="marcainemasemfundo"><img src="../../assets/images/marcainemasemfundo.png"></div>
-			<div id="retangulorodap"><img src="../../assets/images/retangulorodap.png"></div>
+			<div id="linhacinza"><img src="../../assets/images/linhacinza.png"></div>			
 			<div id="Rectangle2"><img src="../../assets/images/Rectangle2.png"></div>
 			<div id="20032017das1630hs173"><img src="../../assets/images/20032017das1630hs173.png"></div>
 			<div id="APRESENTAO"><img src="../../assets/images/APRESENTAO.png"></div>

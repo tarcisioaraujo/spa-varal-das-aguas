@@ -1,19 +1,27 @@
 <template>
-  <div id="app">   
+  <span>   
     <div id="background"> 
-      <nav-bar/>
-      <router-view/>
+      <header>
+        <nav-bar/>
+      </header>
+      <main>
+        <router-view/>
+      </main>
+      <rodape/>
+      
     </div>  
-  </div>
+  </span>
 </template>
 
 <script>
 import NavBar from '@/components/layout/NavBar'
+import Rodape from '@/components/layout/Rodape'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Rodape
   }
 }
 </script>
