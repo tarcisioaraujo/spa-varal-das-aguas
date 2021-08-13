@@ -1,27 +1,38 @@
 <template>
   <span>   
+    
     <div id="background"> 
+
       <header>
         <nav-bar/>
-      </header>
-      <main>
-        <router-view/>
+      </header>     
+
+      <main>        
+        <router-view/>        
       </main>
+
       <rodape/>
       
     </div>  
+
+    <div> 
+      <subscription-modal/>
+    </div> 
+
   </span>
 </template>
 
 <script>
 import NavBar from '@/components/layout/NavBar'
 import Rodape from '@/components/layout/Rodape'
+import SubscriptionModal from '@/components/layout/SubscriptionModal'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Rodape
+    Rodape,
+    SubscriptionModal
   }
 }
 </script>

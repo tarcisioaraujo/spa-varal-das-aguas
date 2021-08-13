@@ -1,5 +1,6 @@
 <template>     
     <div>      
+      
 			<div id="Background"><img src="../../assets/images/Background.png"></div>
 			<div id="Rectangle1"><img src="../../assets/images/Rectangle1.png"></div>
 			<div id="oceanseapacificcalmr"><img src="../../assets/images/oceanseapacificcalmr.png"></div>
@@ -12,7 +13,13 @@
 			<div id="2024032017nadivisria"><img src="../../assets/images/2024032017nadivisria.png"></div>
 			<div id="EXPOSIODEFOTOS"><img src="../../assets/images/EXPOSIODEFOTOS.png"></div>
 			<div id="Rectangle4"><img src="../../assets/images/Rectangle4.png"></div>
-			<div id="FAASUAINSCRIO"><img src="../../assets/images/FAASUAINSCRIO.png"></div>
+			<div id="FAASUAINSCRIO">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+          Abrir modal de demonstração
+        </button>
+        
+        <img src="../../assets/images/FAASUAINSCRIO.png">
+      </div>
 			<div id="Todasasfotosqueretra"><img src="../../assets/images/Todasasfotosqueretra.png"></div>
 			<div id="REGRAS"><img src="../../assets/images/REGRAS.png"></div>
 			<div id="SOBRE"><img src="../../assets/images/SOBRE.png"></div>

@@ -13,7 +13,7 @@
 	 width: 1020px;
 	 height: 2030px; 
 	 overflow: hidden;
-	 z-index:0;
+	 z-index:1;
 	} 
 
  #Background 
@@ -106,16 +106,6 @@
 	 z-index:9;
 } 
 
- #20032017das1630hs173 
-{ 
-	 left: 634px; 
-	 top: 736px; 
-	 position: absolute; 
-	 width: 128px;
-	 height: 23px;
-	 z-index:10;
-} 
-
  #APRESENTAO 
 { 
 	 left: 633px; 
@@ -124,16 +114,6 @@
 	 width: 98px;
 	 height: 15px;
 	 z-index:11;
-} 
-
- #2024032017nadivisria 
-{ 
-	 left: 634px; 
-	 top: 637px; 
-	 position: absolute; 
-	 width: 121px;
-	 height: 40px;
-	 z-index:12;
 } 
 
  #EXPOSIODEFOTOS 
