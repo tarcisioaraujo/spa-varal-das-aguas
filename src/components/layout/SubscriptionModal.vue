@@ -47,13 +47,11 @@
                                 Eu li e concordo com os termos
                             </label>
                         </div>
-                    </div>                    
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>                                        
                 </form>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+              <div class="modal-footer">                
+                <button type="button" class="btn btn-primary">Enviar</button>
               </div>
             </div>
           </div>
