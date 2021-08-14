@@ -20,7 +20,7 @@
 		<div id="SOBRE"><img src="../../assets/images/SOBRE.png"></div>
 		<div id="ObjetivosPromoverase"><img src="../../assets/images/ObjetivosPromoverase.png"></div>
 		<div id="OCONCURSO"><img src="../../assets/images/OCONCURSO.png"></div>
-		<div id="Concursodefotografia" style="color:#666666;">Concurso de fotografia para todos os técnicos do Inema para exposição de fotos que retratem a temática água (os desafios e as belezas encontradas em campo)  pelos colaboradores. Além de uma apresentação cultural com um artista de rua (poesia, musica, cordel) que aborde a temática água.</div>			
+		<div id="Concursodefotografia" style="color:#666666; font-size: 14px;">Concurso de fotografia para todos os técnicos do Inema para exposição de fotos que retratem a temática água (os desafios e as belezas encontradas em campo)  pelos colaboradores. Além de uma apresentação cultural com um artista de rua (poesia, musica, cordel) que aborde a temática água.</div>			
 		<div id="Varaldasguas"><img src="../../assets/images/Varaldasguas.png"></div>
 		<div id="RoundedRectangle1cop"><img src="../../assets/images/RoundedRectangle1cop.png"></div>			
 	</div>  
