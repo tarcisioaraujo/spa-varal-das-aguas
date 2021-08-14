@@ -5,16 +5,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="padding-left: 70px;">  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">HOME</a>
+            <a class="nav-link" href="#" style="color:#048cbc;">INÍCIO</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">O CONCURSO</a>
+            <a class="nav-link" href="#OCONCURSO" style="color:#048cbc;">O CONCURSO</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">SOBRE</a>
+            <a class="nav-link" href="#SOBRE" style="color:#048cbc;">SOBRE</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">REGRAS</a>
+            <a class="nav-link" href="#REGRAS" style="color:#048cbc;">REGRAS</a>
           </li>  
           <li class="nav-item">
             <a class="nav-link" href="#" style="color:#048cbc;">INSCRIÇÃO</a>

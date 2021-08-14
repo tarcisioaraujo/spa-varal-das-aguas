@@ -3,18 +3,15 @@
 	padding: 0;
  }
  
- #background 
+#background 
 { 
-	 left: 0px; 
-	 top: 0px; 
-	 position: relative; 
-	 margin-left: auto; 
-	 margin-right: auto; 
-	 width: 1020px;
-	 height: 2030px; 
-	 overflow: hidden;
-	 z-index:1;
-	} 
+	 
+	position: relative; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 1020px;
+	height: 2030px; 
+} 
 
  #Background 
 { 
