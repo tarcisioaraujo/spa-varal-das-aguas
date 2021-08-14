@@ -1,11 +1,27 @@
 <template>
-  <div>
-        <div id="bgmenu"><img src="../../assets/images/bgmenu.png"></div>
-        <div id="INCIO"><img src="../../assets/images/INCIO.png"></div>
-        <div id="OCONCURSO_0"><img src="../../assets/images/OCONCURSO_0.png"></div>
-        <div id="SOBRE_0"><img src="../../assets/images/SOBRE_0.png"></div>
-        <div id="REGRAS_0"><img src="../../assets/images/REGRAS_0.png"></div>
-        <div id="INSCRIO"><img src="../../assets/images/INSCRIO.png"></div>
+  <div id="bgmenu">
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: #005370;">            
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="padding-left: 70px;">  
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#048cbc;">HOME</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#048cbc;">O CONCURSO</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#048cbc;">SOBRE</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#048cbc;">REGRAS</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#048cbc;">INSCRIÇÃO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </template>
 
