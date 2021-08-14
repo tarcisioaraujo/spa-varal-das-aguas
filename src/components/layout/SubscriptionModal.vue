@@ -9,7 +9,11 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body">                
+                <div class="alert alert-success" style="display: none;" id="success-alert">
+                  <button type="button" class="close" data-dismiss="alert">x</button>
+                  Inscrição realizada com sucesso.
+                </div>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -92,19 +96,13 @@ export default {
       });
     },
     sendSubscribe() {      
-      axios.post('http://apidev.inema.ba.gov.br/participante', {
+      return axios.post('http://apidev.inema.ba.gov.br/participante', {
         nome: this.inscricao.nome,
         nome_foto: this.inscricao.nome_foto,
         local_foto: this.inscricao.local_foto,
         data_foto: this.inscricao.data_foto,
         img_base64: this.inscricao.fileImage,
         termos: this.inscricao.termos        
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
       });
     },
     async processSubscribe(){ 
@@ -112,8 +110,14 @@ export default {
       this.convertFileImageToBase64(this.inscricao.fileImage)
       .then(function (imgBase64) {        
         vm.inscricao.fileImage = imgBase64
-        return vm.sendSubscribe()                
-      })      
+        // return vm.sendSubscribe()                
+        return Promise.resolve('Success')
+      })  
+      .then(function (response) {
+        console.log(response);
+        $('#success-alert').show();
+        return
+      })    
       .catch(function (error) {
         console.log(error);
         return
