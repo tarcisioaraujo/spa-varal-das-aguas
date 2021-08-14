@@ -17,7 +17,7 @@
             <a class="nav-link" href="#REGRAS" style="color:#048cbc;">REGRAS</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">INSCRIÇÃO</a>
+            <a class="nav-link" href="#" style="color:#048cbc;" data-toggle="modal" data-target="#modalExemplo">INSCRIÇÃO</a>
           </li>
         </ul>
       </div>
