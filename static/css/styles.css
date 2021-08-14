@@ -3,15 +3,17 @@
 	padding: 0;
  }
  
-#background 
+ #background 
 { 
-	 
-	position: relative; 
-	margin-left: auto; 
-	margin-right: auto; 
-	width: 1020px;
-	height: 2030px; 
-} 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1020px;
+	 height: 2030px; 	 
+	 z-index:1;
+	} 
 
  #Background 
 { 
@@ -235,10 +237,10 @@
 
  #bgmenu 
 { 
-	 left: -4px; 
+	 left: -1px; 
 	 top: -1px; 
 	 position: absolute; 
-	 width: 1028px;
+	 width: 1022px;
 	 height: 52px;
 	 z-index:25;
 } 
