@@ -5,7 +5,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="padding-left: 70px;">  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;">INÍCIO</a>
+            <a class="nav-link" href="\" style="color:#048cbc;">INÍCIO</a>
           </li> 
           <li class="nav-item">
             <a class="nav-link" href="#OCONCURSO" style="color:#048cbc;">O CONCURSO</a>
@@ -17,7 +17,7 @@
             <a class="nav-link" href="#REGRAS" style="color:#048cbc;">REGRAS</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#048cbc;" data-toggle="modal" data-target="#modalExemplo">INSCRIÇÃO</a>
+            <a class="nav-link" href="#FAASUAINSCRIO" style="color:#048cbc;">INSCRIÇÃO</a>
           </li>
         </ul>
       </div>
@@ -32,8 +32,21 @@ export default {
     return {
       
     }
+  },
+  mounted () {
+    $('a.nav-link[href^="#"]').on('click', function(e) {     
+      e.preventDefault();
+      var id = $(this).attr('href'),
+      targetOffset = $(id).offset().top;
+        
+      $('html, body').animate({ 
+        scrollTop: targetOffset - 100
+      }, 500);
+    });
   }
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
