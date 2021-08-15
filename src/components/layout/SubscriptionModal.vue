@@ -14,6 +14,10 @@
                   <button type="button" class="close" data-dismiss="alert">x</button>
                   Inscrição realizada com sucesso.
                 </div>
+                <div class="alert alert-danger" style="display: none;" id="danger-alert">
+                  <button type="button" class="close" data-dismiss="alert">x</button>
+                  Houve um problema ao fazer sua inscrição.
+                </div>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -96,30 +100,31 @@ export default {
       });
     },
     sendSubscribe() {      
-      return axios.post('http://apidev.inema.ba.gov.br/participante', {
-        nome: this.inscricao.nome,
-        nome_foto: this.inscricao.nome_foto,
-        local_foto: this.inscricao.local_foto,
-        data_foto: this.inscricao.data_foto,
-        img_base64: this.inscricao.fileImage,
-        termos: this.inscricao.termos        
-      });
+      // return axios.post('http://apidev.inema.ba.gov.br/participante', {
+      //   nome: this.inscricao.nome,
+      //   nome_foto: this.inscricao.nome_foto,
+      //   local_foto: this.inscricao.local_foto,
+      //   data_foto: this.inscricao.data_foto,
+      //   img_base64: this.inscricao.fileImage,
+      //   termos: this.inscricao.termos        
+      // });
+      return Promise.resolve('Success')
     },
     async processSubscribe(){ 
       var vm = this 
       this.convertFileImageToBase64(this.inscricao.fileImage)
       .then(function (imgBase64) {        
         vm.inscricao.fileImage = imgBase64
-        // return vm.sendSubscribe()                
-        return Promise.resolve('Success')
+        return vm.sendSubscribe()                       
       })  
-      .then(function (response) {
-        console.log(response);
+      .then(function (response) {        
         $('#success-alert').show();
+        $('#danger-alert').hide();
         return
       })    
-      .catch(function (error) {
-        console.log(error);
+      .catch(function (error) {                
+        $('#danger-alert').show();
+        $('#success-alert').hide();
         return
       });
 
