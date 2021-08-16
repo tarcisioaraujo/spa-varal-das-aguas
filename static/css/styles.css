@@ -225,6 +225,16 @@
 	 z-index:21;
 } 
 
+#Concursodefotografiarectangle 
+{ 
+	 left: 391px; 
+	 top: 239px; 
+	 position: absolute; 
+	 width: 239px;
+	 height: 24px;
+	 z-index:22;
+} 
+
  #Varaldasguas 
 { 
 	 left: 347px; 
