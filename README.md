@@ -22,13 +22,13 @@ A aplicação consiste em uma Single Page Application (SPA) que será responsáv
 
 <p align="center">
 	<kbd>
-		<img alt="Início" title="#Inicio" width="360" height="340" style="border-radius: 5px" src="./src/assets/images/print_inicio.png">
+		<img alt="Início" title="#Inicio" width="240" height="225" style="border-radius: 5px" src="./src/assets/images/print_inicio.png">
 	</kbd>	
 	<kbd>
-		<img alt="Sobre e Regras" title="#SobreERegras" width="360" height="340" style="border-radius: 5px" src="./src/assets/images/print_sobre_regras.png">
+		<img alt="Sobre e Regras" title="#SobreERegras" width="240" height="225" style="border-radius: 5px" src="./src/assets/images/print_sobre_regras.png">
 	</kbd>
     <kbd>
-		<img alt="Inscrição" title="#Inscricao" width="360" height="340" style="border-radius: 5px" src="./src/assets/images/print_modal_inscricao.png">
+		<img alt="Inscrição" title="#Inscricao" width="240" height="225" style="border-radius: 5px" src="./src/assets/images/print_modal_inscricao.png">
 	</kbd>	
 </p>
 
