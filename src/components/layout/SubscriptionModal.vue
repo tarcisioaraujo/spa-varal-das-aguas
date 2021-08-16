@@ -18,7 +18,7 @@
                   <button type="button" class="close" data-dismiss="alert">x</button>
                   Houve um problema ao fazer sua inscrição.
                 </div>
-                <form>
+                <form id="form">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputName4" class="font-weight-bold">Nome do colaborador:</label>
@@ -81,7 +81,7 @@ export default {
         data_foto:'',
         fileImage:'',
         termos:false
-      }
+      }      
     }
   },
   methods:{
@@ -91,7 +91,7 @@ export default {
         return
       }      
     },    
-    convertFileImageToBase64(file) {
+    convertFileImageToBase64(file) {      
       return new Promise((resolve, reject) => {
         const reader = new FileReader();
         reader.readAsDataURL(file);
@@ -105,27 +105,29 @@ export default {
         nome_foto: this.inscricao.nome_foto,
         local_foto: this.inscricao.local_foto,
         data_foto: this.inscricao.data_foto,
-        img_base64: this.inscricao.fileImage,
+        img_base64: this.imgBase64,
         termos: this.inscricao.termos        
       });      
     },
-    async processSubscribe(){ 
+    async processSubscribe() { 
       var vm = this 
-      this.convertFileImageToBase64(this.inscricao.fileImage)
-      .then(function (imgBase64) {        
-        vm.inscricao.fileImage = imgBase64
-        return vm.sendSubscribe()                       
+      return this.convertFileImageToBase64(this.inscricao.fileImage)
+      .then(function (imgBase64Converted) {
+        vm.imgBase64 = imgBase64Converted
+        // return vm.sendSubscribe()   
+        return Promise.resolve("Success");                    
       })  
-      .then(function (response) {        
+      .then(function (response) {             
         $('#success-alert').show();
         $('#danger-alert').hide();
-        return
+        return 
       })    
-      .catch(function (error) {                
+      .catch(function (error) {                        
         $('#danger-alert').show();
         $('#success-alert').hide();
         return
       });
+
     }
   }
 }
