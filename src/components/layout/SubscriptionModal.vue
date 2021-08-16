@@ -41,7 +41,7 @@
                     </div>
                     <div class="form-group">
                         <label for="photoFile1" class="font-weight-bold">Anexar foto</label>
-                        <input type="file" class="form-control-file" id="photoFile1" @change="processFile($event)">
+                        <input type="file" class="form-control-file" id="photoFile1" ref="inputFile" @change="processFile($event)">
                     </div>
                     <div class="form-group">
                         <label for="terms" class="font-weight-bold">Termos</label>
@@ -109,17 +109,28 @@ export default {
         termos: this.inscricao.termos        
       });      
     },
-    async processSubscribe() { 
+    async processSubscribe() {       
       var vm = this 
       return this.convertFileImageToBase64(this.inscricao.fileImage)
-      .then(function (imgBase64Converted) {
+      .then(function (imgBase64Converted) {        
         vm.imgBase64 = imgBase64Converted
-        // return vm.sendSubscribe()   
-        return Promise.resolve("Success");                    
+        // return Promise.resolve("Success");                    
+        // return Promise.reject("Error");   
+        return vm.sendSubscribe()                
       })  
-      .then(function (response) {             
+      .then(function (response) {            
         $('#success-alert').show();
         $('#danger-alert').hide();
+        Object.keys(vm.inscricao).forEach(function(key,index) {
+          if(typeof vm.inscricao[key] === "string") 
+            vm.inscricao[key] = '';
+          else if (typeof vm.inscricao[key] === "boolean") 
+            vm.inscricao[key] = false; 
+          else if (typeof vm.inscricao[key] === "object") {            
+            vm.inscricao[key] = null;            
+            vm.$refs.inputFile.value = null;
+          }
+        });        
         return 
       })    
       .catch(function (error) {                        
@@ -127,7 +138,6 @@ export default {
         $('#success-alert').hide();
         return
       });
-
     }
   }
 }
